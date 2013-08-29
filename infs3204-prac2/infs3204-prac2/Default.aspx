@@ -5,13 +5,20 @@
 </asp:Content>
 <asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
     <h2>
-        Welcome to ASP.NET!
+        Color Mixer
     </h2>
-    <p>
-        To learn more about ASP.NET visit <a href="http://www.asp.net" title="ASP.NET Website">www.asp.net</a>.
-    </p>
-    <p>
-        You can also find <a href="http://go.microsoft.com/fwlink/?LinkID=152368&amp;clcid=0x409"
-            title="MSDN ASP.NET Docs">documentation on ASP.NET at MSDN</a>.
-    </p>
+
+    <!-- The input -->
+    <asp:TextBox runat="server" id="input1Txt"/>
+    <asp:Label runat="server" text="+" />
+    <asp:TextBox runat="server" id="input2Txt"/>
+
+    <!-- The output -->
+    <asp:TextBox runat="server" ID="outputTxt" />
+    <br />
+
+    <!-- The calculate button -->
+    <asp:Button runat="server" Text="Mix" id="calculateBtn" OnClick="calculateBtn_Click" />
+
 </asp:Content>
+
