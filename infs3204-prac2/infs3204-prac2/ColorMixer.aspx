@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="Default.aspx.cs" Inherits="infs3204_prac2._Default" %>
+    CodeBehind="ColorMixer.aspx.cs" Inherits="infs3204_prac2.ColorMixer" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
 </asp:Content>

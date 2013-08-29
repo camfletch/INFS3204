@@ -10,42 +10,42 @@
 namespace infs3204_prac2 {
     
     
-    public partial class _Default {
+    public partial class CountryCodeFinder {
         
         /// <summary>
-        /// input1Txt control.
+        /// scriptmanager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox input1Txt;
+        protected global::System.Web.UI.ScriptManager scriptmanager1;
         
         /// <summary>
-        /// input2Txt control.
+        /// initialLoadLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox input2Txt;
+        protected global::System.Web.UI.WebControls.Label initialLoadLabel;
         
         /// <summary>
-        /// outputTxt control.
+        /// inputTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox outputTxt;
+        protected global::System.Web.UI.WebControls.TextBox inputTxt;
         
         /// <summary>
-        /// calculateBtn control.
+        /// outputLbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button calculateBtn;
+        protected global::System.Web.UI.WebControls.Label outputLbl;
     }
 }
