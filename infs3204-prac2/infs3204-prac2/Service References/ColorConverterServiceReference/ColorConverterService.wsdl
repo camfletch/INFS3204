@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ColorToCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="color" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ColorToCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ColorToCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ColorToCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:ColorToCode" />
+  </wsdl:message>
+  <wsdl:message name="ColorToCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:ColorToCodeResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ColorConverterServiceSoap">
+    <wsdl:operation name="ColorToCode">
+      <wsdl:input message="tns:ColorToCodeSoapIn" />
+      <wsdl:output message="tns:ColorToCodeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ColorConverterServiceSoap" type="tns:ColorConverterServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ColorToCode">
+      <soap:operation soapAction="http://tempuri.org/ColorToCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ColorConverterServiceSoap12" type="tns:ColorConverterServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ColorToCode">
+      <soap12:operation soapAction="http://tempuri.org/ColorToCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ColorConverterService">
+    <wsdl:port name="ColorConverterServiceSoap" binding="tns:ColorConverterServiceSoap">
+      <soap:address location="http://localhost:7394/Services/ColorConverterService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ColorConverterServiceSoap12" binding="tns:ColorConverterServiceSoap12">
+      <soap12:address location="http://localhost:7394/Services/ColorConverterService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
