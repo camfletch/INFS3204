@@ -18,16 +18,17 @@
             <br />
 
             <asp:Label runat="server" Text="Country:" /> 
-            <asp:TextBox runat="server" id="inputTxt"/>
+            <input type="text" id="inputTxt"/>
             <input type="button" value="Find country code" onclick="find()" />
             <br />
 
-            <asp:Label runat="server" id="outputLbl" Text="hello"> </asp:Label> 
+            <label id="outputLbl" /> 
         </div>
 
     <script type="text/javascript">
         var find = function () {
-            infs3204_prac2.Services.CountryCodeService.HelloWorld(onSuccess, onFailed);
+            var input = $get("inputTxt").value;
+            infs3204_prac2.Services.CountryCodeService.FindCountryCode(input, onSuccess, onFailed);
         }
 
         var onSuccess = function (result) {

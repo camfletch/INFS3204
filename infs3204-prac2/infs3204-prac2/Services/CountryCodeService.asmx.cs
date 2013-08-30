@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using System.IO;
 
 namespace infs3204_prac2.Services
 {
@@ -16,11 +17,29 @@ namespace infs3204_prac2.Services
     [System.Web.Script.Services.ScriptService]
     public class CountryCodeService : System.Web.Services.WebService
     {
+        private List<string> countryCodes;
+        public CountryCodeService()
+        {
+            string text = File.ReadAllText("c:\\countryCode.txt").ToLower();
+            countryCodes = text.Split('#').ToList();
+        }
 
         [WebMethod]
-        public string HelloWorld()
+        public string FindCountryCode(string input)
         {
-            return "Hello World";
+            List<string> result = (from t in countryCodes
+                                   where t.Contains(input.ToLower())
+                                   select t).ToList();
+            if (result.Count() == 0)
+            {
+                return "No Results Found";
+            }
+
+            else
+            {
+                string resultString = String.Join(" ", result);
+                return resultString;
+            }
         }
     }
 }
