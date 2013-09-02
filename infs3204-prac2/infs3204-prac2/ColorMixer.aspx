@@ -14,6 +14,7 @@
     <asp:TextBox runat="server" id="input2Txt"/>
 
     <!-- The output -->
+    <asp:Label runat="server" text="=" />
     <asp:TextBox runat="server" ID="outputTxt" />
     <br />
 
