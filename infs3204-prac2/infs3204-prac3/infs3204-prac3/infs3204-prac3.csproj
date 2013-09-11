@@ -58,6 +58,13 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <None Include="Service References\AusPostcodeValidationServiceReference\AusPostcodeValidationService.disco" />
+    <None Include="Service References\AusPostcodeValidationServiceReference\configuration91.svcinfo" />
+    <None Include="Service References\AusPostcodeValidationServiceReference\configuration.svcinfo" />
+    <None Include="Service References\AusPostcodeValidationServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <Content Include="Services\AusPostcodeValidationService.svc" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
@@ -72,6 +79,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <None Include="Service References\AusPostcodeValidationServiceReference\AusPostcodeValidationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -120,6 +130,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AusPostcodeValidationServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Services\AusPostcodeValidationService.svc.cs">
       <DependentUpon>AusPostcodeValidationService.svc</DependentUpon>
     </Compile>
@@ -138,6 +153,18 @@
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AusPostcodeValidationServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AusPostcodeValidationServiceReference\AusPostcodeValidationService.wsdl" />
+    <None Include="Service References\AusPostcodeValidationServiceReference\AusPostcodeValidationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

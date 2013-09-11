@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d7c1bdb9-bd6b-450d-983f-329d5b0b52af" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2364/Services/AusPostcodeValidationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AusPostcodeValidationService.wsdl" MetadataType="Wsdl" ID="ef8bfffd-1499-439e-a81e-759e16c3129c" SourceId="1" SourceUrl="http://localhost:2364/Services/AusPostcodeValidationService.svc?wsdl" />
+    <MetadataFile FileName="AusPostcodeValidationService.xsd" MetadataType="Schema" ID="7dca185a-1043-490f-8cd7-73162ce42922" SourceId="1" SourceUrl="http://localhost:2364/Services/AusPostcodeValidationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AusPostcodeValidationService.disco" MetadataType="Disco" ID="71a1df98-7108-4d08-92f1-c0fc3f493fba" SourceId="1" SourceUrl="http://localhost:2364/Services/AusPostcodeValidationService.svc?disco" />
+    <MetadataFile FileName="AusPostcodeValidationService1.xsd" MetadataType="Schema" ID="f414def5-57e5-45c0-93f8-de6661f9d346" SourceId="1" SourceUrl="http://localhost:2364/Services/AusPostcodeValidationService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

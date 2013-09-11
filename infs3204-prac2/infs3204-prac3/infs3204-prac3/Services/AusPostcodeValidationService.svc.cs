@@ -13,6 +13,7 @@ namespace infs3204_prac3.Services
 
         public AusPostcodeValidationService()
         {
+            // add the ranges for each state
             _postCodes = new Dictionary<string, List<Tuple<int, int>>>();
             _postCodes.Add("NSW", new List<Tuple<int, int>> { 
                 new Tuple<int, int>(2000, 2599),
