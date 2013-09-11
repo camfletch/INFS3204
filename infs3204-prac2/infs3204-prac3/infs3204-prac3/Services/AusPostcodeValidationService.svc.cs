@@ -40,7 +40,11 @@ namespace infs3204_prac3.Services
         {
             // get the codes matching the state code
             List<Tuple<int, int>> codes = new List<Tuple<int, int>>();
-            codes.AddRange(_postCodes[state]);
+            if (!_postCodes.Keys.Contains(state.ToUpper())) {
+                return false;
+            }
+
+            codes.AddRange(_postCodes[state.ToUpper()]);
             if (codes.Count > 0)
             {
                 // check if the postcode is in the range

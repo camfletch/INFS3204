@@ -14,5 +14,13 @@ namespace infs3204_prac3
         {
 
         }
+
+        protected void btn_OnClick(object sender, EventArgs e)
+        {
+            ManagementService service = new ManagementService();
+            var result = service.GetJobInfo(input1.Text, input2.Text);
+
+            output.Text = result.ToString();
+        }
     }
 }

@@ -10,42 +10,42 @@
 namespace infs3204_prac3 {
     
     
-    public partial class SiteMaster {
+    public partial class GetJobInfo {
         
         /// <summary>
-        /// HeadContent control.
+        /// firstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder HeadContent;
+        protected global::System.Web.UI.WebControls.TextBox firstName;
         
         /// <summary>
-        /// HeadLoginView control.
+        /// lastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginView HeadLoginView;
+        protected global::System.Web.UI.WebControls.TextBox lastName;
         
         /// <summary>
-        /// NavigationMenu control.
+        /// search control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Menu NavigationMenu;
+        protected global::System.Web.UI.WebControls.Button search;
         
         /// <summary>
-        /// MainContent control.
+        /// result control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Label result;
     }
 }
