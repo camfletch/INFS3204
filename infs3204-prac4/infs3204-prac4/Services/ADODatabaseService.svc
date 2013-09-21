@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="infs3204_prac4.Services.ADODatabaseService" CodeBehind="ADODatabaseService.svc.cs" %>
