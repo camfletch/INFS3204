@@ -14,7 +14,7 @@ namespace infs3204_prac4.Models
         [DataMember]
         public string MedicalRegistrationNo { get; set; }
         [DataMember]
-        public string Firstname { get; set; }
+        public string FirstName { get; set; }
         [DataMember]
         public string LastName { get; set; }
         [DataMember]
