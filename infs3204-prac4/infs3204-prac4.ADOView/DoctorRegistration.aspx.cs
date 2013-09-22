@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace infs3204_prac4.ADOView
 {
-    public partial class About : System.Web.UI.Page
+    public partial class DoctorRegistration : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

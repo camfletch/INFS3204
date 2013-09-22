@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace infs3204_prac4.ADOView {
+namespace infs3204_prac4.LINQView {
     
     
     public partial class SiteMaster {

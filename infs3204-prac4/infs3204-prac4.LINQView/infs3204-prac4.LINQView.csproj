@@ -6,12 +6,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E633F2EF-2F01-4E3E-BE1D-3C4BBE7AB34A}</ProjectGuid>
+    <ProjectGuid>{2C0AA701-C467-4F8C-906E-7245B8AD9D43}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>infs3204_prac4.ADOView</RootNamespace>
-    <AssemblyName>infs3204-prac4.ADOView</AssemblyName>
+    <RootNamespace>infs3204_prac4.LINQView</RootNamespace>
+    <AssemblyName>infs3204-prac4.LINQView</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
@@ -170,7 +170,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>34672</DevelopmentServerPort>
+          <DevelopmentServerPort>34976</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
