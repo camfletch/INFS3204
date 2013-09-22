@@ -8,7 +8,7 @@
       <Column Name="PhoneNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Address" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Association Name="PatientData_Appointment" Member="AppointmentDatas" ThisKey="HealthInsuranceNo" OtherKey="HealthInsuranceNo" Type="AppointmentData" />
+      <Association Name="Patient_Appointment" Member="AppointmentDatas" ThisKey="HealthInsuranceNo" OtherKey="HealthInsuranceNo" Type="AppointmentData" />
     </Type>
   </Table>
   <Table Name="dbo.Doctors" Member="DoctorDatas">
@@ -19,7 +19,7 @@
       <Column Name="HealthProfession" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Column Name="PhoneNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="Email" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Association Name="DoctorData_Appointment" Member="AppointmentDatas" ThisKey="MedicalRegistrationNo" OtherKey="MedicalRegistrationNo" Type="AppointmentData" />
+      <Association Name="Doctor_Appointment" Member="AppointmentDatas" ThisKey="MedicalRegistrationNo" OtherKey="MedicalRegistrationNo" Type="AppointmentData" />
     </Type>
   </Table>
   <Table Name="dbo.Appointments" Member="AppointmentDatas">
@@ -28,8 +28,8 @@
       <Column Name="MedicalRegistrationNo" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="AppointmentTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
       <Column Name="ClinicName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Association Name="DoctorData_Appointment" Member="DoctorData" ThisKey="MedicalRegistrationNo" OtherKey="MedicalRegistrationNo" Type="DoctorData" IsForeignKey="true" />
-      <Association Name="PatientData_Appointment" Member="PatientData" ThisKey="HealthInsuranceNo" OtherKey="HealthInsuranceNo" Type="PatientData" IsForeignKey="true" />
+      <Association Name="Doctor_Appointment" Member="DoctorData" ThisKey="MedicalRegistrationNo" OtherKey="MedicalRegistrationNo" Type="DoctorData" IsForeignKey="true" />
+      <Association Name="Patient_Appointment" Member="PatientData" ThisKey="HealthInsuranceNo" OtherKey="HealthInsuranceNo" Type="PatientData" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
