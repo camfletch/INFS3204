@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infs3204-prac4", "infs3204-prac4\infs3204-prac4.csproj", "{7D2B9E03-EC10-4353-B61B-C44B66420B03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "infs3204-prac4.ADOView", "infs3204-prac4.ADOView\infs3204-prac4.ADOView.csproj", "{E633F2EF-2F01-4E3E-BE1D-3C4BBE7AB34A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{7D2B9E03-EC10-4353-B61B-C44B66420B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D2B9E03-EC10-4353-B61B-C44B66420B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D2B9E03-EC10-4353-B61B-C44B66420B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E633F2EF-2F01-4E3E-BE1D-3C4BBE7AB34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E633F2EF-2F01-4E3E-BE1D-3C4BBE7AB34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E633F2EF-2F01-4E3E-BE1D-3C4BBE7AB34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E633F2EF-2F01-4E3E-BE1D-3C4BBE7AB34A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

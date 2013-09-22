@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace infs3204_prac4
+namespace infs3204_prac4.ADOView
 {
 
 

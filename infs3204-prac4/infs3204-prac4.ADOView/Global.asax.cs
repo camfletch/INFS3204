@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace infs3204_prac4
+namespace infs3204_prac4.ADOView
 {
     public class Global : System.Web.HttpApplication
     {

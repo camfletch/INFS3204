@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace infs3204_prac4.Account
+namespace infs3204_prac4.ADOView.Account
 {
 
 

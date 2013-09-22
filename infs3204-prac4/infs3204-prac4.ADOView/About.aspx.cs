@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace infs3204_prac4
+namespace infs3204_prac4.ADOView
 {
     public partial class About : System.Web.UI.Page
     {

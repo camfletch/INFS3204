@@ -4,18 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using infs3204_prac4.Services;
-using System.ServiceModel;
-using infs3204_prac4.Models;
 
-namespace infs3204_prac4
+namespace infs3204_prac4.ADOView
 {
-    public partial class _Default : System.Web.UI.Page
+    public partial class SiteMaster : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
     }
 }

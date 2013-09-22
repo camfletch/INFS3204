@@ -7,20 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace infs3204_prac4.Account
+namespace infs3204_prac4.ADOView.Account
 {
 
 
-    public partial class ChangePassword
+    public partial class Login
     {
 
         /// <summary>
-        /// ChangeUserPassword control.
+        /// RegisterHyperLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ChangePassword ChangeUserPassword;
+        protected global::System.Web.UI.WebControls.HyperLink RegisterHyperLink;
+
+        /// <summary>
+        /// LoginUser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Login LoginUser;
     }
 }

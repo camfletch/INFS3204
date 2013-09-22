@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace infs3204_prac4.Services
+namespace infs3204_prac4.Models
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;
@@ -260,7 +260,7 @@ namespace infs3204_prac4.Services
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PatientData_Appointment", Storage="_AppointmentDatas", ThisKey="HealthInsuranceNo", OtherKey="HealthInsuranceNo")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PatientData_AppointmentData", Storage="_AppointmentDatas", ThisKey="HealthInsuranceNo", OtherKey="HealthInsuranceNo")]
 		public EntitySet<AppointmentData> AppointmentDatas
 		{
 			get
@@ -470,7 +470,7 @@ namespace infs3204_prac4.Services
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DoctorData_Appointment", Storage="_AppointmentDatas", ThisKey="MedicalRegistrationNo", OtherKey="MedicalRegistrationNo")]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DoctorData_AppointmentData", Storage="_AppointmentDatas", ThisKey="MedicalRegistrationNo", OtherKey="MedicalRegistrationNo")]
 		public EntitySet<AppointmentData> AppointmentDatas
 		{
 			get
@@ -643,7 +643,7 @@ namespace infs3204_prac4.Services
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DoctorData_Appointment", Storage="_DoctorData", ThisKey="MedicalRegistrationNo", OtherKey="MedicalRegistrationNo", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="DoctorData_AppointmentData", Storage="_DoctorData", ThisKey="MedicalRegistrationNo", OtherKey="MedicalRegistrationNo", IsForeignKey=true)]
 		public DoctorData DoctorData
 		{
 			get
@@ -677,7 +677,7 @@ namespace infs3204_prac4.Services
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PatientData_Appointment", Storage="_PatientData", ThisKey="HealthInsuranceNo", OtherKey="HealthInsuranceNo", IsForeignKey=true)]
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="PatientData_AppointmentData", Storage="_PatientData", ThisKey="HealthInsuranceNo", OtherKey="HealthInsuranceNo", IsForeignKey=true)]
 		public PatientData PatientData
 		{
 			get
