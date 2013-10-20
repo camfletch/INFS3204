@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a7f1e748-13ce-4cc7-8a61-02b296eb62de" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Prac5Service1.xsd" MetadataType="Schema" ID="b591875b-3c99-466c-a75a-4ca4a6a019f3" SourceId="1" SourceUrl="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Prac5Service.xsd" MetadataType="Schema" ID="f301991c-8583-4e33-9da5-28486bf181bd" SourceId="1" SourceUrl="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Prac5Service2.xsd" MetadataType="Schema" ID="56114deb-ae2f-4bb5-bc76-30bf6a372923" SourceId="1" SourceUrl="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Prac5Service21.xsd" MetadataType="Schema" ID="093267b6-f47e-4d94-a215-73f676c874da" SourceId="1" SourceUrl="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="Prac5Service.disco" MetadataType="Disco" ID="f8ce7b0c-8c4c-406b-9e4c-1ee13a849824" SourceId="1" SourceUrl="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?disco" />
+    <MetadataFile FileName="Prac5Service.wsdl" MetadataType="Wsdl" ID="43e872aa-308d-4be4-8772-343097854746" SourceId="1" SourceUrl="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Prac5ServiceWebRole.Prac5Service" CodeBehind="Prac5Service.svc.cs" %>

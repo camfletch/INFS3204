@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Prac5Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPrac5Service_GetStringBack_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetStringBack" />
+  </wsdl:message>
+  <wsdl:message name="IPrac5Service_GetStringBack_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetStringBackResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrac5Service_AnagramsFinder_InputMessage">
+    <wsdl:part name="parameters" element="tns:AnagramsFinder" />
+  </wsdl:message>
+  <wsdl:message name="IPrac5Service_AnagramsFinder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AnagramsFinderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPrac5Service_ASCIIFilter_InputMessage">
+    <wsdl:part name="parameters" element="tns:ASCIIFilter" />
+  </wsdl:message>
+  <wsdl:message name="IPrac5Service_ASCIIFilter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ASCIIFilterResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPrac5Service">
+    <wsdl:operation name="GetStringBack">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrac5Service/GetStringBack" message="tns:IPrac5Service_GetStringBack_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrac5Service/GetStringBackResponse" message="tns:IPrac5Service_GetStringBack_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AnagramsFinder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrac5Service/AnagramsFinder" message="tns:IPrac5Service_AnagramsFinder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrac5Service/AnagramsFinderResponse" message="tns:IPrac5Service_AnagramsFinder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ASCIIFilter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPrac5Service/ASCIIFilter" message="tns:IPrac5Service_ASCIIFilter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPrac5Service/ASCIIFilterResponse" message="tns:IPrac5Service_ASCIIFilter_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPrac5Service" type="tns:IPrac5Service">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetStringBack">
+      <soap:operation soapAction="http://tempuri.org/IPrac5Service/GetStringBack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AnagramsFinder">
+      <soap:operation soapAction="http://tempuri.org/IPrac5Service/AnagramsFinder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ASCIIFilter">
+      <soap:operation soapAction="http://tempuri.org/IPrac5Service/ASCIIFilter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Prac5Service">
+    <wsdl:port name="BasicHttpBinding_IPrac5Service" binding="tns:BasicHttpBinding_IPrac5Service">
+      <soap:address location="http://64d66a74a0f84c358de45791b3caa2b1.cloudapp.net/Prac5Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
