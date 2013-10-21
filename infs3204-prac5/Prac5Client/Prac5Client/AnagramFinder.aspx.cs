@@ -19,7 +19,7 @@ namespace Prac5Client
         protected void find_Click(object sender, EventArgs e)
         {
             int nonChars = (from c in input.Text
-                            where (c < 'A' || c > 'z')
+                            where (c < 'A' || c > 'z') && c != ' '
                             select c).Count();
             if (nonChars > 0)
             {
